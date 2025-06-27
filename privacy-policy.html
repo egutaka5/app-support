@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - 体重-血圧-服薬</title>
+    <meta name="description" content="健康管理アプリ「体重-血圧-服薬」のプライバシーポリシー。個人情報の取り扱いについて詳しく説明しています。">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #007AFF, #0051D5);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .update-date {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #007AFF;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 600;
+            color: #0051D5;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section h2 {
+            color: #007AFF;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007AFF;
+        }
+        
+        .section h3 {
+            color: #0051D5;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        .developer-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            margin: 20px 0;
+        }
+        
+        .developer-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .developer-info li {
+            padding: 5px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .developer-info li:last-child {
+            border-bottom: none;
+        }
+        
+        .developer-info strong {
+            color: #28a745;
+            min-width: 100px;
+            display: inline-block;
+        }
+        
+        .data-types {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        
+        .data-types h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .no-collect {
+            background: #d4edda;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+            margin: 20px 0;
+        }
+        
+        .no-collect h4 {
+            color: #155724;
+            margin-bottom: 10px;
+        }
+        
+        .security-box {
+            background: #e7f3ff;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #b3d9ff;
+            margin: 20px 0;
+        }
+        
+        .security-box h4 {
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .privacy-highlight {
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .privacy-highlight h4 {
+            color: #721c24;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .privacy-highlight p {
+            color: #721c24;
+            font-weight: 500;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .warning-box h4 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .warning-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .warning-box li {
+            padding: 8px 0;
+            color: #856404;
+            border-bottom: 1px solid #ffeaa7;
+        }
+        
+        .warning-box li:last-child {
+            border-bottom: none;
+        }
+        
+        .contact-info {
+            background: #e9ecef;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .contact-info h4 {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info strong {
+            color: #007AFF;
+        }
+        
+        .email-link {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        .important-notice {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .important-notice h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .important-notice p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .navigation {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .navigation a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+        }
+        
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-top: 3px solid #007AFF;
+        }
+        
+        .footer p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .toc h3 {
+            color: #007AFF;
+            margin-bottom: 15px;
+        }
+        
+        .toc ol {
+            padding-left: 20px;
+        }
+        
+        .toc li {
+            margin-bottom: 5px;
+        }
+        
+        .toc a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .navigation a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー -->
+        <div class="header">
+            <h1>🔒 プライバシーポリシー</h1>
+            <p>健康管理アプリ「体重-血圧-服薬」</p>
+        </div>
+
+        <!-- ナビゲーション -->
+        <div class="navigation">
+            <a href="./index.html">← サポートページに戻る</a>
+        </div>
+
+        <!-- 最終更新日 -->
+        <div class="update-date">
+            最終更新日：2025年6月26日
+        </div>
+
+        <!-- 目次 -->
+        <div class="toc">
+            <h3>📋 目次</h3>
+            <ol>
+                <li><a href="#intro">はじめに</a></li>
+                <li><a href="#developer">開発者情報</a></li>
+                <li><a href="#collection">収集する情報</a></li>
+                <li><a href="#storage">データの保存と管理</a></li>
+                <li><a href="#usage">データの使用目的</a></li>
+                <li><a href="#sharing">データの共有</a></li>
+                <li><a href="#retention">データの保持期間</a></li>
+                <li><a href="#rights">お客様の権利</a></li>
+                <li><a href="#security">セキュリティ</a></li>
+                <li><a href="#health-data">特別な配慮事項（健康データ）</a></li>
+                <li><a href="#minors">未成年者のプライバシー</a></li>
+                <li><a href="#changes">プライバシーポリシーの変更</a></li>
+                <li><a href="#law">準拠法と管轄</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ol>
+        </div>
+
+        <!-- 1. はじめに -->
+        <div class="section" id="intro">
+            <h2>1. はじめに</h2>
+            <p>体重-血圧-服薬（以下「本アプリ」といいます）をご利用いただき、ありがとうございます。本プライバシーポリシーは、本アプリにおける個人情報の取り扱いについて説明するものです。</p>
+        </div>
+
+        <!-- 2. 開発者情報 -->
+        <div class="section" id="developer">
+            <h2>2. 開発者情報</h2>
+            <div class="developer-info">
+                <ul>
+                    <li><strong>アプリ名:</strong> 体重-血圧-服薬</li>
+                    <li><strong>開発者:</strong> 健康管理推進チーム</li>
+                    <li><strong>連絡先:</strong> <a href="mailto:egutaka5@gmail.com" class="email-link">egutaka5@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. 収集する情報 -->
+        <div class="section" id="collection">
+            <h2>3. 収集する情報</h2>
+            
+            <h3>3.1 健康データ</h3>
+            <div class="data-types">
+                <h4>本アプリでは、以下の健康関連データを取り扱います：</h4>
+                <ul>
+                    <li>体重記録</li>
+                    <li>血圧測定値（収縮期血圧・拡張期血圧・脈拍）</li>
+                    <li>服薬記録（薬剤名、服薬日時）</li>
+                </ul>
+            </div>
+
+            <h3>3.2 自動収集情報</h3>
+            <div class="no-collect">
+                <h4>本アプリでは以下の情報は<strong>収集しません</strong>：</h4>
+                <ul>
+                    <li>端末識別情報</li>
+                    <li>位置情報</li>
+                    <li>使用状況の分析データ</li>
+                    <li>クラッシュレポート</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. データの保存と管理 -->
+        <div class="section" id="storage">
+            <h2>4. データの保存と管理</h2>
+            
+            <h3>4.1 ローカル保存</h3>
+            <div class="security-box">
+                <ul>
+                    <li>すべての健康データはお客様の端末内にのみ保存されます</li>
+                    <li>外部サーバーへの送信は一切行いません</li>
+                    <li>インターネット接続なしでも本アプリは完全に機能します</li>
+                </ul>
+            </div>
+
+            <h3>4.2 データの暗号化</h3>
+            <div class="security-box">
+                <ul>
+                    <li>端末内のデータは適切に保護されています</li>
+                    <li>iOSの標準的なセキュリティ機能を活用しています</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 5. データの使用目的 -->
+        <div class="section" id="usage">
+            <h2>5. データの使用目的</h2>
+            <p>収集した健康データは以下の目的でのみ使用されます：</p>
+            <ul>
+                <li>お客様の健康記録の管理・表示</li>
+                <li>データの推移をグラフで可視化</li>
+                <li>アプリ内での履歴表示</li>
+            </ul>
+        </div>
+
+        <!-- 6. データの共有 -->
+        <div class="section" id="sharing">
+            <h2>6. データの共有</h2>
+            
+            <h3>6.1 第三者への提供</h3>
+            <div class="privacy-highlight">
+                <h4>重要な保証</h4>
+                <p>本アプリは、お客様の健康データを第三者と共有することは<strong>一切ありません</strong>。</p>
+            </div>
+
+            <h3>6.2 法的要請への対応</h3>
+            <p>法律や裁判所命令により要求された場合を除き、お客様のデータを開示することはありません。</p>
+        </div>
+
+        <!-- 7. データの保持期間 -->
+        <div class="section" id="retention">
+            <h2>7. データの保持期間</h2>
+            <ul>
+                <li>データはお客様が削除するまで端末内に保持されます</li>
+                <li>アプリを削除すると、すべてのデータも同時に削除されます</li>
+                <li>定期的な自動削除は行いません</li>
+            </ul>
+        </div>
+
+        <!-- 8. お客様の権利 -->
+        <div class="section" id="rights">
+            <h2>8. お客様の権利</h2>
+            
+            <h3>8.1 データの管理</h3>
+            <ul>
+                <li>すべてのデータはお客様が完全に管理できます</li>
+                <li>個別記録の削除が可能です</li>
+                <li>アプリ削除によりすべてのデータを削除できます</li>
+            </ul>
+
+            <h3>8.2 データの移行</h3>
+            <ul>
+                <li>現在、データのエクスポート機能は提供していません</li>
+                <li>将来的な機能追加を検討しています</li>
+            </ul>
+        </div>
+
+        <!-- 9. セキュリティ -->
+        <div class="section" id="security">
+            <h2>9. セキュリティ</h2>
+            
+            <h3>9.1 技術的保護措置</h3>
+            <div class="security-box">
+                <ul>
+                    <li>iOSの標準セキュリティ機能を活用</li>
+                    <li>アプリの暗号化による保護</li>
+                    <li>不正アクセス防止対策</li>
+                </ul>
+            </div>
+
+            <h3>9.2 セキュリティ侵害時の対応</h3>
+            <p>万が一セキュリティ侵害が発生した場合は、適切な対応を行い、必要に応じてお客様に通知します。</p>
+        </div>
+
+        <!-- 10. 特別な配慮事項（健康データ） -->
+        <div class="section" id="health-data">
+            <h2>10. 特別な配慮事項（健康データ）</h2>
+            
+            <h3>10.1 機微情報の取り扱い</h3>
+            <ul>
+                <li>健康データは機微な個人情報として特別に保護します</li>
+                <li>医療目的での使用を意図したものではありません</li>
+                <li>診断や治療の根拠として使用しないでください</li>
+            </ul>
+
+            <h3>10.2 免責事項</h3>
+            <div class="warning-box">
+                <h4>重要な注意事項</h4>
+                <ul>
+                    <li>本アプリは健康記録の補助ツールです</li>
+                    <li>医療診断、治療、予防医学の代替手段ではありません</li>
+                    <li>体調異常時は必ず医療機関にご相談ください</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 11. 未成年者のプライバシー -->
+        <div class="section" id="minors">
+            <h2>11. 未成年者のプライバシー</h2>
+            <ul>
+                <li>本アプリは13歳未満のお子様を対象としていません</li>
+                <li>13歳未満のお子様の個人情報を故意に収集することはありません</li>
+                <li>未成年者がご使用の場合は、保護者の同意を得てください</li>
+            </ul>
+        </div>
+
+        <!-- 12. プライバシーポリシーの変更 -->
+        <div class="section" id="changes">
+            <h2>12. プライバシーポリシーの変更</h2>
+            
+            <h3>12.1 変更の通知</h3>
+            <p>本プライバシーポリシーを変更する場合は：</p>
+            <ul>
+                <li>アプリ内での通知</li>
+                <li>本ページでの更新日の変更</li>
+                <li>重要な変更の場合は別途お知らせ</li>
+            </ul>
+
+            <h3>12.2 変更の効力</h3>
+            <p>変更後も本アプリを継続してご利用いただく場合、変更後のプライバシーポリシーに同意したものとみなします。</p>
+        </div>
+
+        <!-- 13. 準拠法と管轄 -->
+        <div class="section" id="law">
+            <h2>13. 準拠法と管轄</h2>
+            <p>本プライバシーポリシーは日本法に準拠し、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+        </div>
+
+        <!-- 14. お問い合わせ -->
+        <div class="section" id="contact">
+            <h2>14. お問い合わせ</h2>
+            <div class="contact-info">
+                <h4>プライバシーポリシーに関するご質問・ご要望</h4>
+                <p><strong>連絡先:</strong> <a href="mailto:egutaka5@gmail.com" class="email-link">egutaka5@gmail.com</a></p>
+                <p><strong>対応時間:</strong> 平日 9:00-17:00（土日祝日を除く）</p>
+            </div>
+        </div>
+
+        <!-- 重要な同意事項 -->
+        <div class="important-notice">
+            <h3>⚠️ 重要</h3>
+            <p>このプライバシーポリシーをよくお読みいただき、内容をご理解の上で本アプリをご利用ください。本アプリの使用により、このプライバシーポリシーに同意したものとみなされます。</p>
+        </div>
+
+        <!-- ナビゲーション -->
+        <div class="navigation">
+            <a href="./index.html">← サポートページに戻る</a>
+        </div>
+
+        <!-- フッター -->
+        <div class="footer">
+            <p><strong>体重-血圧-服薬 健康管理推進チーム</strong></p>
+            <p>プライバシーを最優先に、安全で信頼できるアプリの提供に努めています。</p>
+        </div>
+    </div>
+</body>
+</html>
